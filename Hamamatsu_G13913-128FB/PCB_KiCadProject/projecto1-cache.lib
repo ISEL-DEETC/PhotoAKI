@@ -1,0 +1,402 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Analog_DAC_MCP4725xxx-xCH
+#
+DEF Analog_DAC_MCP4725xxx-xCH U 0 20 Y Y 1 F N
+F0 "U" -250 250 50 H V C CNN
+F1 "Analog_DAC_MCP4725xxx-xCH" 350 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-6" 0 -250 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+X VOUT 1 400 0 100 L 50 50 1 1 O
+X VSS 2 0 -300 100 U 50 50 1 1 W
+X VDD 3 0 300 100 D 50 50 1 1 W
+X SDA 4 -400 0 100 R 50 50 1 1 B
+X SCL 5 -400 100 100 R 50 50 1 1 I
+X A0 6 -400 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_Coaxial
+#
+DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x01
+#
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x12
+#
+DEF Connector_Generic_Conn_01x12 J 0 40 Y N 1 F N
+F0 "J" 0 600 50 H V C CNN
+F1 "Connector_Generic_Conn_01x12" 0 -700 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 550 50 -650 1 1 10 f
+X Pin_1 1 -200 500 150 R 50 50 1 1 P
+X Pin_10 10 -200 -400 150 R 50 50 1 1 P
+X Pin_11 11 -200 -500 150 R 50 50 1 1 P
+X Pin_12 12 -200 -600 150 R 50 50 1 1 P
+X Pin_2 2 -200 400 150 R 50 50 1 1 P
+X Pin_3 3 -200 300 150 R 50 50 1 1 P
+X Pin_4 4 -200 200 150 R 50 50 1 1 P
+X Pin_5 5 -200 100 150 R 50 50 1 1 P
+X Pin_6 6 -200 0 150 R 50 50 1 1 P
+X Pin_7 7 -200 -100 150 R 50 50 1 1 P
+X Pin_8 8 -200 -200 150 R 50 50 1 1 P
+X Pin_9 9 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x20
+#
+DEF Connector_Generic_Conn_01x20 J 0 40 Y N 1 F N
+F0 "J" 0 1000 50 H V C CNN
+F1 "Connector_Generic_Conn_01x20" 0 -1100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -995 0 -1005 1 1 6 N
+S -50 -895 0 -905 1 1 6 N
+S -50 -795 0 -805 1 1 6 N
+S -50 -695 0 -705 1 1 6 N
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 605 0 595 1 1 6 N
+S -50 705 0 695 1 1 6 N
+S -50 805 0 795 1 1 6 N
+S -50 905 0 895 1 1 6 N
+S -50 950 50 -1050 1 1 10 f
+X Pin_1 1 -200 900 150 R 50 50 1 1 P
+X Pin_10 10 -200 0 150 R 50 50 1 1 P
+X Pin_11 11 -200 -100 150 R 50 50 1 1 P
+X Pin_12 12 -200 -200 150 R 50 50 1 1 P
+X Pin_13 13 -200 -300 150 R 50 50 1 1 P
+X Pin_14 14 -200 -400 150 R 50 50 1 1 P
+X Pin_15 15 -200 -500 150 R 50 50 1 1 P
+X Pin_16 16 -200 -600 150 R 50 50 1 1 P
+X Pin_17 17 -200 -700 150 R 50 50 1 1 P
+X Pin_18 18 -200 -800 150 R 50 50 1 1 P
+X Pin_19 19 -200 -900 150 R 50 50 1 1 P
+X Pin_2 2 -200 800 150 R 50 50 1 1 P
+X Pin_20 20 -200 -1000 150 R 50 50 1 1 P
+X Pin_3 3 -200 700 150 R 50 50 1 1 P
+X Pin_4 4 -200 600 150 R 50 50 1 1 P
+X Pin_5 5 -200 500 150 R 50 50 1 1 P
+X Pin_6 6 -200 400 150 R 50 50 1 1 P
+X Pin_7 7 -200 300 150 R 50 50 1 1 P
+X Pin_8 8 -200 200 150 R 50 50 1 1 P
+X Pin_9 9 -200 100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Outros_LM4040CIX3-2_5T
+#
+DEF Outros_LM4040CIX3-2_5T U 0 40 Y Y 1 L N
+F0 "U" -500 339 50 H V L BNN
+F1 "Outros_LM4040CIX3-2_5T" -500 -457 50 H V L BNN
+F2 "SOT65P210X110-3N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -500 -300 500 300 0 0 16 f
+X + 1 -700 200 200 R 40 40 0 0 B
+X - 2 -700 0 200 R 40 40 0 0 B
+X NC 3 -700 -200 200 R 40 40 0 0 B
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_AD7801BRZ
+#
+DEF SamacSys_Parts_AD7801BRZ IC 0 30 Y Y 1 F N
+F0 "IC" 1350 300 50 H V L CNN
+F1 "SamacSys_Parts_AD7801BRZ" 1350 200 50 H V L CNN
+F2 "SOIC127P1032X265-20N" 1350 100 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/077f/0900766b8077fe26.pdf" 1350 0 50 H I L CNN
+F4 "AD7801BRZ, 8-Bit 8 Bit DAC 833ksps, Parallel, 20-Pin SOIC W" 1350 -100 50 H I L CNN "Description"
+F5 "2.65" 1350 -200 50 H I L CNN "Height"
+F6 "Analog Devices" 1350 -300 50 H I L CNN "Manufacturer_Name"
+F7 "AD7801BRZ" 1350 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "584-AD7801BRZ" 1350 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD7801BRZ/?qs=%2FtpEQrCGXCyxB86MH6WA8A%3D%3D" 1350 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "AD7801BRZ" 1350 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/ad7801brz/analog-devices" 1350 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1300 100 1300 -1000 200 -1000 200 100 N
+X (MSB)_DB7 1 0 0 200 R 50 50 0 0 P
+X ~WR 10 0 -900 200 R 50 50 0 0 P
+X DGND_1 11 1500 -900 200 L 50 50 0 0 P
+X ~PD 12 1500 -800 200 L 50 50 0 0 P
+X ~LDAC 13 1500 -700 200 L 50 50 0 0 P
+X ~CLR 14 1500 -600 200 L 50 50 0 0 P
+X VDD 15 1500 -500 200 L 50 50 0 0 P
+X REFIN 16 1500 -400 200 L 50 50 0 0 P
+X AGND 17 1500 -300 200 L 50 50 0 0 P
+X NC 18 1500 -200 200 L 50 50 0 0 N
+X VOUT 19 1500 -100 200 L 50 50 0 0 P
+X DB6 2 0 -100 200 R 50 50 0 0 P
+X DGND_2 20 1500 0 200 L 50 50 0 0 P
+X DB5 3 0 -200 200 R 50 50 0 0 P
+X DB4 4 0 -300 200 R 50 50 0 0 P
+X DB3 5 0 -400 200 R 50 50 0 0 P
+X DB2 6 0 -500 200 R 50 50 0 0 P
+X DB1 7 0 -600 200 R 50 50 0 0 P
+X (LSB)DB0 8 0 -700 200 R 50 50 0 0 P
+X ~CS 9 0 -800 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MCP1700T-1802E_TT
+#
+DEF SamacSys_Parts_MCP1700T-1802E_TT IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_MCP1700T-1802E_TT" 950 200 50 H V L CNN
+F2 "SOT95P237X112-3N" 950 100 50 H I L CNN
+F3 "" 950 0 50 H I L CNN
+F4 "Microchip MCP1700T-1802E/TT, LDO Voltage Regulator, 200mA, 1.8 V +/-2%, 2.3  6 Vin, 3-Pin SOT-23" 950 -100 50 H I L CNN "Description"
+F5 "Microchip" 950 -300 50 H I L CNN "Manufacturer_Name"
+F6 "MCP1700T-1802E/TT" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "579-MCP1700T1802E/TT" 950 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1700T-1802E-TT/?qs=YUl711QUJY0TiDgzmNmFrg%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "MCP1700T-1802E/TT" 950 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/mcp1700t-1802ett/microchip-technology" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X GND 1 0 0 200 R 50 50 0 0 P
+X VOUT 2 0 -100 200 R 50 50 0 0 P
+X VIN 3 1100 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MCP1700T-3302E_TT
+#
+DEF SamacSys_Parts_MCP1700T-3302E_TT IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_MCP1700T-3302E_TT" 950 200 50 H V L CNN
+F2 "SOT95P237X112-3N" 950 100 50 H I L CNN
+F3 "" 950 0 50 H I L CNN
+F4 "LDO voltage regulator 250mA Isupply 1uA" 950 -100 50 H I L CNN "Description"
+F5 "1.12" 950 -200 50 H I L CNN "Height"
+F6 "579-MCP1700T3302E/TT" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1700T-3302E-TT?qs=fM4xO01eazPmCNDrdHEdaw%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Microchip" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MCP1700T-3302E/TT" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X GND 1 0 0 200 R 50 50 0 0 P
+X VOUT 2 0 -100 200 R 50 50 0 0 P
+X VIN 3 1100 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MCP33131D-10-E_MS
+#
+DEF SamacSys_Parts_MCP33131D-10-E_MS IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_MCP33131D-10-E_MS" 1050 200 50 H V L CNN
+F2 "SOP50P490X110-10N" 1050 100 50 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP33131-MCP33121-MCP33111-Family-Data-Sheet-DS20006122A.pdf" 1050 0 50 H I L CNN
+F4 "Analog to Digital Converters - ADC 16-bit,1 Msps, single channel, differential SAR ADC" 1050 -100 50 H I L CNN "Description"
+F5 "1.1" 1050 -200 50 H I L CNN "Height"
+F6 "579-MCP33131D10EMS" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP33131D-10-E-MS/?qs=byeeYqUIh0NhU4NZQbhNiA%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Microchip" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MCP33131D-10-E/MS" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -500 200 -500 200 100 N
+X VREF 1 0 0 200 R 50 50 0 0 P
+X DVIO 10 1200 0 200 L 50 50 0 0 P
+X AVDD 2 0 -100 200 R 50 50 0 0 P
+X AIN+ 3 0 -200 200 R 50 50 0 0 P
+X AIN- 4 0 -300 200 R 50 50 0 0 P
+X GND 5 0 -400 200 R 50 50 0 0 P
+X CNVST 6 1200 -400 200 L 50 50 0 0 P
+X SDO 7 1200 -300 200 L 50 50 0 0 P
+X SCLK 8 1200 -200 200 L 50 50 0 0 P
+X SDI 9 1200 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MCP6S91-E_SN
+#
+DEF SamacSys_Parts_MCP6S91-E_SN IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "SamacSys_Parts_MCP6S91-E_SN" 950 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 950 100 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0806/0900766b808065ce.pdf" 950 0 50 H I L CNN
+F4 "Rail-to-Rail Programmable Gain Amplifier" 950 -100 50 H I L CNN "Description"
+F5 "1.75" 950 -200 50 H I L CNN "Height"
+F6 "Microchip" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MCP6S91-E/SN" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "579-MCP6S91-E/SN" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP6S91-E-SN?qs=Y8sGFBEOzV8guHFCFN0vog%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "MCP6S91-E/SN" 950 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/mcp6s91-esn/microchip-technology" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+X VOUT 1 0 0 200 R 50 50 0 0 O
+X CH0 2 0 -100 200 R 50 50 0 0 P
+X VREF 3 0 -200 200 R 50 50 0 0 I
+X VSS 4 0 -300 200 R 50 50 0 0 W
+X ~CS 5 1100 -300 200 L 50 50 0 0 I
+X SI 6 1100 -200 200 L 50 50 0 0 P
+X SCK 7 1100 -100 200 L 50 50 0 0 P
+X VDD 8 1100 0 200 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
